@@ -15,7 +15,7 @@ class PostsController < ApplicationController
       redirect_to post_path(@post)
     else
       render :edit
-    end 
+    end
   end
 
   private
