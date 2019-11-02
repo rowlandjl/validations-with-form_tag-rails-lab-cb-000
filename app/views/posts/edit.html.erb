@@ -6,6 +6,10 @@
       <ul>
         <% @post.errors.full_messages.each do |message| %>
           <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <div class="field<%= ' field_with_errors' if @post.errors[:title].any? %>">
     <%= label_tag "title", "Title" %>
